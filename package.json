@@ -1,18 +1,24 @@
 {
-  "name": "reactNativeNew",
+  "name": "react-native-template",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "prepublish": "yarn run build",
+    "test": "jest",
+    "flow": "flow",
+    "flow-stop": "flow stop"
   },
   "dependencies": {
     "react": "16.4.1",
     "react-native": "0.56.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-jest": "23.4.2",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "^5",
+    "flow-bin": "^0.75.0",
     "jest": "23.5.0",
     "react-test-renderer": "16.4.1"
   },
